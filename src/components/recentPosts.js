@@ -21,4 +21,4 @@ class RecentPosts extends Component {
   }
 }
 
-export default connect(null, actions)(SearchBar);
+export default connect(null, actions)(RecentPosts);
