@@ -5,9 +5,9 @@ const INIT_STATE = {
   recent: []
 };
 export default function(INIT_STATE, actions) {
-  switch (action.type) {
+  switch (actions.type) {
     case SET_RECENT_POSTS:
-      const recentPosts = action.payload;
+      const recentPosts = bindActionCreators.payload;
       return {
         ...state,
         recentPosts
